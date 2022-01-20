@@ -271,4 +271,4 @@ for idx, img_name in enumerate(sorted(os.listdir(img_path))):
 
     print(f'Elapsed time = {time.time() - st}')
     if visualise:
-        cv2.imwrite('./results_images/{}'.format(os.path.splitext(str(img_name))[0]), img)
+        cv2.imwrite('./results_images/{}'.format(img_name), img)
